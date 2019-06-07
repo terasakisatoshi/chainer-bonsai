@@ -73,7 +73,7 @@ def main():
     z.backward()
     assert (x.grad == xp.exp(x.array)).all()
     assert (y.grad == xp.exp(y.array)).all()
-
+    print("Done!")
 
 if __name__ == '__main__':
     main()
