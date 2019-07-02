@@ -54,7 +54,7 @@ def main():
     assert (x.grad == y.array).all()
     assert (y.grad == x.array).all()
     assert (z.grad == xp.ones(z.shape)).all()
-
+    print("finished")
 
 if __name__ == '__main__':
     main()
